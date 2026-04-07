@@ -1,0 +1,20 @@
+.categories-div{
+   
+    text-decoration: none;
+    background-color: aliceblue;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+     
+    
+}
+.categories-div p{
+    
+    display:flex;
+    flex-direction: column;
+      
+}
+.categories-div a{
+    text-decoration: none;
+  
+}

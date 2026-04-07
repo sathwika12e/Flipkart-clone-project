@@ -1,0 +1,20 @@
+.categories-container{
+    justify-content: center;
+    display:flex;
+    flex-wrap:nowrap;
+    background-color: rgb(244, 247, 251);
+    margin-left: 15vw;
+}
+.categories-container img{
+    background-color: turquoise;
+    height:15vh;
+    width:13vw;
+}
+.categories-container p{
+    font-size: 12px;
+}
+.categories-container div{
+   
+    text-align: center;
+    
+}

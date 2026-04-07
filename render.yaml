@@ -1,0 +1,16 @@
+services:
+  - type: web
+    name: ecommerce-app
+    runtime: python3
+    buildCommand: pip install -r requirements.txt && python manage.py collectstatic --noinput && python manage.py migrate && python manage.py loaddata data.json
+    startCommand: gunicorn EcommerceApp.wsgi:application --bind 0.0.0.0:$PORT
+    envVars:
+      - key: SECRET_KEY
+        generateValue: true
+      - key: DATABASE_URL
+        fromDatabase:
+          type: postgresql
+          name: ecommerce-db
+          property: connectionString
+      - key: DJANGO_SETTINGS_MODULE
+        value: EcommerceApp.settings

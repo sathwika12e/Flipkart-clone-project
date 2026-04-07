@@ -1,0 +1,19 @@
+.login-div{
+    display:flex;
+    flex-direction: column;
+    width:50vw;
+    margin-left: 20vw;
+    margin-top: 3vh;
+    
+}
+.login-div input{
+    margin:3vh;
+    text-align: center;
+
+}
+.login-div button{
+    margin-left: 18vw;
+}
+.login-div p{
+    margin-left: 17vw;
+}

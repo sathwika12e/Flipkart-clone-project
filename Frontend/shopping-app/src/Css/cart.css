@@ -1,0 +1,18 @@
+.cart-div{
+     border:1px solid black;
+    display:flex;
+    flex-direction: row;
+    margin:25px;
+}
+.cart-div div{
+   
+    display:flex;
+    flex-direction: row;
+
+}
+.active{
+    padding-bottom:12px;
+    color:black;
+    border-bottom:2px solid blue;
+    font-size: large;
+}

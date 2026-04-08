@@ -14,7 +14,7 @@ function Login(){
         }
      const login=(userCredentials)=>{
        console.log(userCredentials)
-         let login_url="http://127.0.0.1:8000/api/loginapi/"
+         let login_url="https://flipkart-clone-project-2.onrender.com/api/loginapi/"
         axios.post(login_url,userCredentials).then((resp)=>{navigate("/")}).catch((err)=>{console.log(err)})
    }
        

@@ -15,7 +15,7 @@ import { useEffect } from 'react'
 function Mobiles(){
      let [branddata,setBranddata]=useState([])
    useEffect(()=>{
-    let get_url="http://127.0.0.1:8000/api/getbrandsdata/"
+    let get_url="https://flipkart-clone-project-2.onrender.com/api/getbrandsdata/"
     axios.get(get_url).then((resp)=>{
         setBranddata(resp.data)
 

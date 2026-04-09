@@ -10,9 +10,11 @@ function AllMobiles({ brand }) {
   let navigate=useNavigate();
 
   useEffect(() => {
-    let get_url = "http://127.0.0.1:8000/api/getbrandsmodelsdata/";
+    let get_url ="https://flipkart-clone-project-dii0.onrender.com/api/getbrandsmodelsdata/";
     axios.get(get_url).then((resp) => {
+      console.log("from all mobilesaa",resp.data)
       setData(Array.isArray(resp.data) ? resp.data : []);
+      console.log("from all mobilesaa",resp.data)
     });
   }, []);
 
